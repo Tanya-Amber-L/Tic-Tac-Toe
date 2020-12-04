@@ -1,0 +1,32 @@
+/* Personal Project: Tic Tac Toe game. */
+/* Project begins 4/12/20. */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat";
+}
+
+.top, .start-again {
+    height: 20vh;
+    text-align: center;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    margin: 1em;
+}
+
+
+.game {
+    height: 60vh;
+    background-image: linear-gradient(90deg, rgba(43,136,177,1) 0%, rgba(102,177,191,1) 100%);
+}
+
