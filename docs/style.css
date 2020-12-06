@@ -10,7 +10,7 @@
 }
 
 .top, .start-again {
-    height: 20vh;
+    height: 22.5vh;
     text-align: center;
 }
 
@@ -19,14 +19,54 @@
     justify-content: center;
 }
 
+.player__one, .player__two {
+    font-size: 1.2em;
+    margin: 1em;
+    padding: 1em;
+    border: 0.1em solid grey;
+    border-radius: 5px;
+}
+
 .title {
     text-align: center;
     margin: 1em;
 }
 
 
-.game {
-    height: 60vh;
+.game-container {
+    height: 55vh;
     background-image: linear-gradient(90deg, rgba(43,136,177,1) 0%, rgba(102,177,191,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+.game {
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "1 2 3"
+                         "4 5 6"
+                         "7 8 9";
+}
+
+.cell { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-again__btn {
+    margin: 2em;
+    padding: 1em 2em;
+    background-color:rgb(226, 226, 226);
+    border: 0px;
+    border-radius: 5px;
+}
+
+.start-again__btn:hover {
+    background-color: rgb(211, 211, 211);
+}
