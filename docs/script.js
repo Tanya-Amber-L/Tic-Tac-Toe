@@ -1,4 +1,4 @@
-
+// Tanya Leenders - Personal Project: Tic Tac Toe game.
 //-----variables-----
 let status = document.querySelector(".status");
 let playerX = document.querySelector(".player-x");
