@@ -9,6 +9,8 @@
     font-family: "Montserrat";
 }
 #container {
+    width: 100vw;
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -81,5 +83,25 @@
 
 .status-modal {
     pointer-events: none;
-    /* position: absolute; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 54, 54, 0.4);
+    opacity: 0;
+    transition: .5s;
+}
+.status-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    border-radius: 5px;
+    background-color: white;
+}
+.active-modal {
+    pointer-events: all;
+    opacity: 1;
 }
