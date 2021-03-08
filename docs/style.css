@@ -8,31 +8,33 @@
     margin: 0px;
     font-family: "Montserrat";
 }
-
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .top, .start-again {
     height: 22.5vh;
     text-align: center;
 }
-
 .players {
     display: flex;
     justify-content: center;
 }
-
-.player__one, .player__two {
-    font-size: 1.2em;
+.player-x, .player-o {
+    font-size: 1em;
     margin: 1em;
     padding: 1em;
     border: 0.1em solid grey;
     border-radius: 5px;
+    background-color: rgba(192, 192, 192, 0.7);
+    opacity: .6;
 }
-
 .title {
     text-align: center;
     margin: 1em;
 }
-
-
 .game-container {
     height: 55vh;
     background-image: linear-gradient(90deg, rgba(43,136,177,1) 0%, rgba(102,177,191,1) 100%);
@@ -41,7 +43,6 @@
     align-items: center;
     
 }
-
 .game {
     width: 450px;
     height: 450px;
@@ -49,27 +50,36 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "1 2 3"
-                         "4 5 6"
-                         "7 8 9";
+                        "4 5 6"
+                        "7 8 9";
 }
-
 .cell { 
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: rgb(17, 100, 136) 3px 3px 5px;
+    font-size: 1.5em;
     cursor: pointer;
 }
-
-
-.start-again__btn {
+.start-again-btn {
     margin: 2em;
     padding: 1em 2em;
     background-color:rgb(226, 226, 226);
     border: 0px;
     border-radius: 5px;
+    transition: .2s;
+}
+.start-again-btn:hover {
+    background-color: rgb(211, 211, 211);
 }
 
-.start-again__btn:hover {
-    background-color: rgb(211, 211, 211);
+.player-active {
+    opacity: 1;
+    background-color: transparent;
+    box-shadow: 0 3px 5px grey;
+}
+
+.status-modal {
+    pointer-events: none;
+    /* position: absolute; */
 }

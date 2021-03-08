@@ -15,22 +15,20 @@ Project begins 4/12/20. -->
 <body>
     
     <main id="container">
-
         <div class="top"> 
             <h1 class="title">Tic-Tac-Toe Game</h1>
             <div class="players">
-                <div class="player__one"> 
+                <div class="player-x player-active"> 
                     <i class="fas fa-times"></i>
                     Player One's Turn
                 </div>
-                <div class="player__two">
+                <div class="player-o">
                     <i class="far fa-circle"></i>
                     Player Two's Turn
                 </div>
             </div>
             <p>Just click on a cell to begin the game</p>
         </div>
-
         <div class="game-container">
             <div class="game">
                 <div index="0" class="cell"></div>
@@ -44,14 +42,10 @@ Project begins 4/12/20. -->
                 <div index="8" class="cell"></div>
             </div>
         </div>
-
-        <div class="start-again"> 
-            <button class="start-again__btn">Start again</button>
+        <button class="start-again-btn">Start again</button>
+        <div class="status-modal">
+            <p class="status"></p>
         </div>
-
     </main>
-    
 </body>
 </html>
-
-<!-- WIP: Just a  beginning for now  -->
