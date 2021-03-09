@@ -13,7 +13,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .top, .start-again {
     height: 22.5vh;
@@ -38,11 +38,11 @@
 }
 .game-container {
     height: 55vh;
+    width: 100%;
     background-image: linear-gradient(90deg, rgba(43,136,177,1) 0%, rgba(102,177,191,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .game {
     width: 450px;
